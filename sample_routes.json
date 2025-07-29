@@ -1,0 +1,239 @@
+{
+  "mission_info": {
+    "name": "Factory Reconnaissance - Stealth Approach",
+    "date": "2025-07-22",
+    "duration_hours": 1.8,
+    "total_drones": 1
+  },
+  "targets": [
+    {
+      "name": "Industrial Target - Chemical Factory",
+      "longitude": 34.650,
+      "latitude": 51.450,
+      "priority": "HIGH",
+      "reconnaissance_type": "perimeter_survey"
+    }
+  ],
+  "map_objects": [
+    {
+      "name": "Chemical Factory (TARGET)",
+      "type": "factory",
+      "longitude": 34.650,
+      "latitude": 51.450,
+      "size": "large",
+      "status": "operational",
+      "symbol": "🏭",
+      "threat_level": "medium"
+    },
+      {
+      "name": "EW Station Alpha",
+      "type": "ew_zone",
+      "longitude": 34.300,
+      "latitude": 51.250,
+      "radius_km": 2.5,
+      "threat_level": "high",
+      "status": "active",
+      "symbol": "⚠️"
+    },
+    {
+      "name": "EW Station Bravo", 
+      "type": "ew_zone",
+      "longitude": 34.550,
+      "latitude": 51.600,
+      "radius_km": 2.0,
+      "threat_level": "high", 
+      "status": "active",
+      "symbol": "⚠️"
+    },
+    {
+      "name": "Regional City Center",
+      "type": "urban_area",
+      "longitude": 34.400,
+      "latitude": 51.350,
+      "population": 120000,
+      "restriction": "no_fly_zone",
+      "air_defense": "radar_coverage",
+      "symbol": "🏙️"
+    }
+  ],
+  "safe_corridors": [
+    {
+      "name": "SC-Southern Approach",
+      "center_longitude": 34.200,
+      "center_latitude": 51.150,
+      "safety_score": 0.950,
+      "terrain": "valleys_and_ridges"
+    },
+    {
+      "name": "SC-Eastern Return", 
+      "center_longitude": 34.750,
+      "center_latitude": 51.300,
+      "safety_score": 0.920,
+      "terrain": "low_elevation"
+    }
+  ],
+  "routes": [
+    {
+      "name": "Stealth Factory Recon",
+      "drone_id": "GHOST-01",
+      "mission": "Factory reconnaissance via terrain masking",
+      "takeoff_time": "05:30:00",
+      "landing_time": "07:18:00",
+      "flight_profile": "NOE_terrain_following",
+      "waypoints": [
+        {
+          "longitude": 33.600,
+          "latitude": 51.400,
+          "altitude_msl": 110,
+          "time": "05:30:00",
+          "action": "Takeoff - Western base position"
+        },
+        {
+          "longitude": 33.543,
+          "latitude": 51.347,
+          "altitude_msl": 51,
+          "time": "05:38:00",
+          "action": "Ultra-low valley - EXTREME stealth (1m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 33.751,
+          "latitude": 51.402,
+          "altitude_msl": 58,
+          "time": "05:46:00",
+          "action": "Western corridor - Secondary low point (8m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 33.918,
+          "latitude": 51.277,
+          "altitude_msl": 53,
+          "time": "05:54:00",
+          "action": "Western valley floor - Deepest approach (3m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 34.209,
+          "latitude": 51.180,
+          "altitude_msl": 56,
+          "time": "06:05:00",
+          "action": "Central corridor - Safe from EW Alpha (6m terrain + 50m AGL, 10km from EW)"
+        },
+        {
+          "longitude": 34.272,
+          "latitude": 51.124,
+          "altitude_msl": 57,
+          "time": "06:10:00",
+          "action": "Southern valley - Maximum EW separation (7m terrain + 50m AGL, 14km from EW)"
+        },
+        {
+          "longitude": 34.459,
+          "latitude": 51.124,
+          "altitude_msl": 58,
+          "time": "06:16:00",
+          "action": "Approach valley - Known ultra-low point (8m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 34.584,
+          "latitude": 51.235,
+          "altitude_msl": 60,
+          "time": "06:22:00",
+          "action": "Eastern corridor - Pre-target positioning (10m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 34.647,
+          "latitude": 51.249,
+          "altitude_msl": 57,
+          "time": "06:26:00",
+          "action": "Final approach valley - Optimal low point (7m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 34.650,
+          "latitude": 51.400,
+          "altitude_msl": 85,
+          "time": "06:32:00",
+          "action": "Target approach climb - Begin reconnaissance phase"
+        },
+        {
+          "longitude": 34.650,
+          "latitude": 51.450,
+          "altitude_msl": 120,
+          "time": "06:35:00",
+          "action": "Factory overhead - Start perimeter survey"
+        },
+        {
+          "longitude": 34.680,
+          "latitude": 51.450,
+          "altitude_msl": 125,
+          "time": "06:37:00",
+          "action": "East perimeter - Photo documentation"
+        },
+        {
+          "longitude": 34.680,
+          "latitude": 51.420,
+          "altitude_msl": 125,
+          "time": "06:39:00",
+          "action": "South perimeter - Security assessment"
+        },
+        {
+          "longitude": 34.620,
+          "latitude": 51.420,
+          "altitude_msl": 125,
+          "time": "06:41:00",
+          "action": "West perimeter - Facility mapping"
+        },
+        {
+          "longitude": 34.620,
+          "latitude": 51.480,
+          "altitude_msl": 125,
+          "time": "06:43:00",
+          "action": "North perimeter - Complete survey"
+        },
+        {
+          "longitude": 34.626,
+          "latitude": 51.305,
+          "altitude_msl": 59,
+          "time": "06:47:00",
+          "action": "Egress valley - Eastern low corridor (9m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 34.355,
+          "latitude": 51.055,
+          "altitude_msl": 59,
+          "time": "06:54:00",
+          "action": "Return corridor - Southern bypass route (9m terrain + 50m AGL, 22km from EW)"
+        },
+        {
+          "longitude": 34.100,
+          "latitude": 51.150,
+          "altitude_msl": 65,
+          "time": "07:02:00",
+          "action": "Western return - Climbing for base approach"
+        },
+        {
+          "longitude": 33.814,
+          "latitude": 51.263,
+          "altitude_msl": 56,
+          "time": "07:10:00",
+          "action": "Western valley return - Low corridor (6m terrain + 50m AGL)"
+        },
+        {
+          "longitude": 33.600,
+          "latitude": 51.400,
+          "altitude_msl": 110,
+          "time": "07:18:00",
+          "action": "Landing - Mission complete"
+        }
+      ]
+    }
+  ],
+  "mission_timeline": [
+    {"time": "05:30:00", "event": "Takeoff - Western base departure"},
+    {"time": "05:38:00", "event": "Enter ultra-low valley - 1m terrain + 50m AGL (EXTREME stealth)"},
+    {"time": "05:54:00", "event": "Western valley floor - 3m terrain corridor exploitation"},
+    {"time": "06:05:00", "event": "Central corridor - 6m terrain, 10km safe from EW Alpha"},
+    {"time": "06:16:00", "event": "Deep valley transit - Multiple ultra-low points chained"},
+    {"time": "06:35:00", "event": "Target overhead - Begin factory reconnaissance"},
+    {"time": "06:43:00", "event": "Perimeter survey complete - All angles documented"},
+    {"time": "06:47:00", "event": "Eastern valley egress - 9m terrain corridor"},
+    {"time": "07:10:00", "event": "Western return corridor - 6m terrain valley"},
+    {"time": "07:18:00", "event": "Mission complete - Ultra-stealth profile maintained"}
+  ]
+}

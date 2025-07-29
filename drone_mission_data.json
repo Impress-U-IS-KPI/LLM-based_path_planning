@@ -1,0 +1,126 @@
+{
+  "mission_type": "multi_target_reconnaissance",
+  "terrain_summary": {
+    "area_bounds": {
+      "min_lon": 33.501042,
+      "max_lon": 35.084375,
+      "min_lat": 50.902083,
+      "max_lat": 52.388194,
+      "min_elev": 1.0,
+      "max_elev": 235.0
+    },
+    "grid_resolution_deg": 0.01736110839891788,
+    "grid_resolution_m": 1927.083032279885,
+    "elevation_stats": {
+      "mean": 114.92388167388168,
+      "std": 43.03475895420702,
+      "range": 234.0
+    },
+    "terrain_complexity": {
+      "avg_slope_deg": 1.2357183522292379,
+      "max_slope_deg": 6.7052707535646086,
+      "roughness_index": 28.0047769101475,
+      "ridge_density": 0.03294853294853295,
+      "valley_density": 0.03715728715728716
+    }
+  },
+  "flight_parameters": {
+    "recommended_min_altitude_m": 164.92388167388168,
+    "recommended_max_altitude_m": 435.0,
+    "safe_corridor_count": 20,
+    "terrain_classification": "COMPLEX_TERRAIN",
+    "weather_considerations": {
+      "wind_exposure_risk": "MEDIUM",
+      "turbulence_risk": "HIGH"
+    }
+  },
+  "safe_corridors": [
+    {
+      "center_lat": 50.902083,
+      "center_lon": 33.621874999999996,
+      "avg_elevation": 140.9,
+      "avg_slope": 1.905158852678698,
+      "safety_score": 0.8729894098214201
+    },
+    {
+      "center_lat": 50.902083,
+      "center_lon": 34.7864583,
+      "avg_elevation": 129.6,
+      "avg_slope": 1.748694547689092,
+      "safety_score": 0.8834203634873938
+    },
+    {
+      "center_lat": 50.915972,
+      "center_lon": 34.428125,
+      "avg_elevation": 103.7,
+      "avg_slope": 0.658057905251874,
+      "safety_score": 0.9561294729832084
+    },
+    {
+      "center_lat": 50.929861,
+      "center_lon": 34.053125,
+      "avg_elevation": 114.3,
+      "avg_slope": 0.6170343449135576,
+      "safety_score": 0.9588643770057629
+    },
+    {
+      "center_lat": 50.94375000000001,
+      "center_lon": 33.6364583,
+      "avg_elevation": 146.1,
+      "avg_slope": 0.4966539049050895,
+      "safety_score": 0.9668897396729941
+    },
+    {
+      "center_lat": 50.94375000000001,
+      "center_lon": 34.784375000000004,
+      "avg_elevation": 100.3,
+      "avg_slope": 1.0959653613267246,
+      "safety_score": 0.9269356425782184
+    },
+    {
+      "center_lat": 50.95763899999999,
+      "center_lon": 34.365625,
+      "avg_elevation": 92.1,
+      "avg_slope": 0.5992976312339323,
+      "safety_score": 0.9600468245844045
+    },
+    {
+      "center_lat": 50.97152799999999,
+      "center_lon": 33.9260417,
+      "avg_elevation": 127.6,
+      "avg_slope": 0.8335253937878206,
+      "safety_score": 0.9444316404141453
+    },
+    {
+      "center_lat": 50.97708359999999,
+      "center_lon": 34.4260417,
+      "avg_elevation": 116.0,
+      "avg_slope": 0.9992866911669049,
+      "safety_score": 0.9333808872555397
+    },
+    {
+      "center_lat": 50.985417,
+      "center_lon": 34.5760417,
+      "avg_elevation": 113.9,
+      "avg_slope": 0.7964223985466546,
+      "safety_score": 0.9469051734302231
+    }
+  ],
+  "tactical_considerations": {
+    "concealment_opportunities": {
+      "ridge_masking": "AVAILABLE",
+      "valley_routes": "AVAILABLE",
+      "terrain_following": "OPTIONAL"
+    },
+    "navigation_challenges": {
+      "gps_reliability": "HIGH",
+      "visual_navigation": "GOOD",
+      "landmark_availability": "HIGH"
+    },
+    "operational_risks": {
+      "terrain_collision": "LOW",
+      "forced_landing_sites": "AVAILABLE",
+      "weather_exposure": "HIGH"
+    }
+  }
+}
